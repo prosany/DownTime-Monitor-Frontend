@@ -1,0 +1,11 @@
+.gradient-violet {
+  @apply duration-500 bg-gradient-to-r from-violet-300 to-violet-200 border border-violet-700 rounded-full flex justify-center items-center text-violet-700;
+}
+
+.gradient-violet-hover {
+  @apply duration-500 bg-gradient-to-l from-violet-300 to-violet-100 border border-violet-700 rounded-full flex justify-center items-center text-violet-700;
+}
+
+.quick-link {
+  @apply text-base font-normal text-gray-700 duration-300 py-1 border-0 border-b border-violet-200 hover:border-violet-700 hover:text-violet-700;
+}

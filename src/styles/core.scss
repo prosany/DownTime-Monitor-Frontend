@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color: #1f2021;
+  --background-surface: #1a1a1a;
+  --background-input: #252526;
+  --input-border: #363636;
+  --text-color: #b7b7b7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #1f2021;
+    --background-surface: #1a1a1a;
+    --background-input: #252526;
+    --input-border: #363636;
+    --text-color: #b7b7b7;
+  }
+}
+
+@layer utilities {
+  @import '@/styles/utilities/utilities.scss';
+}
+
+@layer components {
+  @import '@/styles/components/components.scss';
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
