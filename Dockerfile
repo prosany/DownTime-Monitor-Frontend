@@ -43,4 +43,5 @@ EXPOSE 6200
 RUN npm install pm2 -g
 
 # Command to start the app using PM2
-CMD ["pm2-runtime", "ecosystem.config.js", "--env", "production"]
+# CMD ["pm2-runtime", "ecosystem.config.js", "--env", "production"]
+CMD ["yarn", "start"]
